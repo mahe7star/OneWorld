@@ -63,7 +63,8 @@ body .wrapper .right-container .form-group.animated {
 body .wrapper .right-container label {
   font-size: .9rem;
   font-weight: 500;
-  margin-bottom: .5rem;
+  display: block;
+  margin-bottom: 10px;
 }
 
 body .wrapper .right-container .form-control {
@@ -79,19 +80,19 @@ body .wrapper .right-container .form-control.expand {
   width: 65%;
   border: 1px solid #ccc;
   border-radius: 25px;
-  padding: 5px 15px;
-  height: 45px;
+  padding: 0 15px;
   margin-right: 15px;
+  margin-bottom: 0;
 }
 
 body .wrapper .right-container .btn-subscribe {
   border-radius: 25px;
-  padding: 8px 35px;
   text-align: center;
   position: relative;
-  left: 0;
+  top: -4px;
   width: 145px;
   height: 45px;
+  line-height: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.3);
