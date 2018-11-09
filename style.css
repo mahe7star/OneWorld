@@ -8,11 +8,22 @@ body {
 body .wrapper {
   width: 100%;
   height: 100vh;
-  background: url(bg.png);
-  background-position: -345px 0px;
-  background-size: contain;
-  background-repeat: no-repeat;
   overflow: auto;
+}
+
+body .wrapper .left-container {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .left-container img {
+  width: 100%;
 }
 
 body .wrapper .right-container {
@@ -24,6 +35,7 @@ body .wrapper .right-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 40px;
 }
 
 body .wrapper .right-container .heading {
@@ -63,8 +75,9 @@ body .wrapper .right-container .form-group.animated {
 body .wrapper .right-container label {
   font-size: .9rem;
   font-weight: 500;
+  color: #555;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 body .wrapper .right-container .form-control {
@@ -90,6 +103,7 @@ body .wrapper .right-container .btn-subscribe {
   text-align: center;
   position: relative;
   top: -4px;
+  left: -4px;
   width: 145px;
   height: 45px;
   line-height: 1;
