@@ -3,10 +3,10 @@
   const subscribeTxt = document.getElementsByClassName('form-control')[0];
   subscribeBtn.addEventListener('click', (event) => {
     subscribeTxt.classList.toggle('expand');
-    if(event.target.innerText == 'Subscribe'){
-      event.target.innerText = 'Submit';
+    if(event.target.innerText === 'JOIN US'){
+      event.target.innerText = 'SUBMIT';
     } else {
-      event.target.innerText = 'Subscribe';
+      event.target.innerText = 'JOIN US';
     }
   })  
 })();

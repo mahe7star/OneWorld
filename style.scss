@@ -8,11 +8,11 @@ body{
   height: 100vh;
   background: url(bg.png); 
   background-position: -345px 0px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   overflow: auto;
   .right-container{
-    width: 48%;
+    width: 60%;
     float: right;
     display: grid;
     height: 100%;
