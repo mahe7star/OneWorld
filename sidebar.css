@@ -1,0 +1,46 @@
+.sidebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  position: fixed;
+  left: -65px;
+  bottom: 2px;
+  font-size: 14px;
+  height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sidebar .sidebar-items {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar .content-sidebar {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.sidebar i {
+  margin-right: 5px;
+}
+
+.sidebar .timeline {
+  color: #666;
+  font-weight: 500;
+}
+/*# sourceMappingURL=sidebar.css.map */

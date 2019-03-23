@@ -1,0 +1,32 @@
+nav {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+ font-family: 'Comfortaa', cursive;
+
+
+  .logo{
+    display: inline-block;
+    background: #37c0d6;
+    color: #fff;
+    padding: 7px;
+    font-size: 14px;
+    border: 7px solid #1ab6cf;
+  }
+
+  .menu {
+    // display: inline-block;
+    float: right;
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 25px;
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}
