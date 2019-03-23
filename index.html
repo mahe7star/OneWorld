@@ -5,11 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>One World</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="sidebar.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
+  <nav>
+    <div class="logo">OW</div>
+    <div class="menu">
+      <ul>
+        <li>Agenda</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <div class="sidebar-items date">
+      <div class="content-sidebar">
+        <span class="right text-info"><i class="far fa-calendar"></i></span>
+        <span class="left timeline">26 April, 2019</span>
+      </div>
+    </div>
+    <div class="sidebar-items place">
+      <div class="content-sidebar">
+        <span class="right text-info"><i class="fas fa-map-marker-alt"></i></span>
+        <label class="left timeline">CCAT Auditorium, Gurugram</label>
+      </div>
+    </div>
+    <div class="sidebar-items time">
+      <div class="content-sidebar">
+        <span class="right text-info"><i class="far fa-clock"></i></span>
+        <span class="left timeline">9:00 AM</span>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid wrapper">
     <div class="left-container">
       <img src="bg.png" alt="">
@@ -20,16 +54,40 @@
           One World
         </h1>
         <p class="content animated fadeIn">
-          Borders divides land, religion divides people.
-          Is it possible that we stop recognising people by their country and religion? Both borders and religions were created so that people can 
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam est assumenda repellendus velit doloribus iste, autem nobis rerum fugiat quis asperiores doloremque quam consequuntur neque cupiditate at nihil labore! Cupiditate, blanditiis porro? Quo aliquid nobis minima possimus sapiente iusto provident, quidem doloribus amet nulla voluptate numquam. Ut necessitatibus maxime expedita.
+          <span class="text-info">Borders divides land, religion divides people.</span>
+          Is it possible that we stop recognising people by their country and religion? Are they serving the purpose for which they were created in the first place? These are the few things we need to ask ourselves.
         </p>
         <div class="form-group animated fadeIn">
-          <label for="subscribe">Become a member now.</label>
+          <label for="subscribe" style="color: #666;">Confirm your participation.</label>
           <input type="text" class="form-control" id="subscribe" placeholder="Email Adress">
-          <button class="waves-effect waves-light btn btn-subscribe">Join Us</button>
+          <button class="btn-info btn btn-subscribe">I'm in</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="speakers animated fadeIn">
+    <label class="watermark">speakers</label>
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/med/men/44.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/med/women/47.jpg" alt="">
+    </div>
+    <div class="slide active">
+      <div class="image-container">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt=""><br>
+      </div>
+      <label class="speaker-label">
+        Daniel Li<br>
+        <span>Founder, One World</span>
+      </label>
+    </div>
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/med/women/32.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/med/women/58.jpg" alt="">
     </div>
   </div>
 

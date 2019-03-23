@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 body {
   margin: 0;
@@ -7,8 +7,14 @@ body {
 
 body .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   overflow: auto;
+  margin-bottom: 40px;
+}
+
+body .wrapper .btn-info {
+  background: #1ab6cf;
+  border-color: #1ab6cf;
 }
 
 body .wrapper .left-container {
@@ -39,10 +45,11 @@ body .wrapper .right-container {
 }
 
 body .wrapper .right-container .heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 3.5rem;
-  color: #555;
+  color: #666;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 body .wrapper .right-container .heading.animated {
@@ -56,6 +63,7 @@ body .wrapper .right-container .content {
   font-family: 'Nunito', sans-serif;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: #666;
 }
 
 body .wrapper .right-container .content.animated {
@@ -66,8 +74,8 @@ body .wrapper .right-container .content.animated {
 }
 
 body .wrapper .right-container .form-group.animated {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
@@ -91,20 +99,43 @@ body .wrapper .right-container .form-control {
 
 body .wrapper .right-container .form-control.expand {
   width: 65%;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 25px;
-  padding: 0 15px;
-  margin-right: 15px;
+  padding: 20px 15px;
+  margin-right: -35px;
   margin-bottom: 0;
+}
+
+body .wrapper .right-container .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999;
+  font-size: 14px;
+}
+
+body .wrapper .right-container .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+}
+
+body .wrapper .right-container .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999;
+  font-size: 14px;
+}
+
+body .wrapper .right-container .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+  font-size: 14px;
 }
 
 body .wrapper .right-container .btn-subscribe {
   border-radius: 25px;
   text-align: center;
   position: relative;
-  top: -4px;
-  left: -4px;
-  width: 145px;
+  top: -3px;
+  width: 100px;
   height: 45px;
   line-height: 1;
   -webkit-transition: 0.5s;
@@ -117,5 +148,91 @@ body .wrapper .right-container .btn-subscribe.expand {
   width: 100%;
   height: 285px;
   border-radius: 10px;
+}
+
+.speakers {
+  text-align: center;
+  position: relative;
+}
+
+.speakers.animated {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.speakers .watermark {
+  font-weight: 700;
+  font-family: 'Comfortaa', cursive;
+  font-size: 35px;
+  position: absolute;
+  letter-spacing: 45px;
+  left: 51.6%;
+  opacity: .1;
+  top: -58px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.speakers .slide {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+}
+
+.speakers .slide img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.speakers .slide.active {
+  margin-top: -10px;
+}
+
+.speakers .slide.active .image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.speakers .slide.active .image-container::before, .speakers .slide.active .image-container::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #7adeee;
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+}
+
+.speakers .slide.active .image-container::after {
+  width: 100px;
+  height: 100px;
+  background: #17a2b8;
+  opacity: .3;
+  top: -10px;
+  left: -10px;
+}
+
+.speakers .slide.active .image-container img {
+  width: 80px;
+  border: 5px solid #1ab6cf;
+}
+
+.speakers .slide .speaker-label {
+  display: block;
+  margin-top: 17px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #516064;
+  font-style: italic;
+}
+
+.speakers .slide .speaker-label span {
+  font-size: 12px;
+  color: #687b80;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
