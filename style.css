@@ -8,6 +8,7 @@ body {
 body .wrapper {
   width: 100%;
   margin-bottom: 40px;
+  margin-top: 50px;
   overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;

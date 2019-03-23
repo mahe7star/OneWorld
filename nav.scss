@@ -3,6 +3,10 @@ nav {
   display: flex;
   align-items: center;
  font-family: 'Comfortaa', cursive;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
 
 
   .logo{
@@ -25,8 +29,9 @@ nav {
     li {
       display: inline-block;
       margin-right: 25px;
-      font-size: 14px;
+      font-size: 13px;
       color: #666;
+      font-weight: 600;
     }
   }
 }
